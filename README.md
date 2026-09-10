@@ -1,122 +1,169 @@
 # KyuPlay — Setup & System Requirements
 
-KyuPlay is a desktop venue-management application built for managing courts, players, Open Play sessions, matchmaking, tournaments, schedules, statistics, Live View, and venue records from one place.
+KyuPlay is a desktop venue-management application for managing **courts, players, Open Play sessions, matchmaking, tournaments, schedules, statistics, Live View, and venue records** in one place.
 
-KyuPlay is available for Windows and Apple Silicon Macs.
+KyuPlay is available for:
 
-Windows
-System Requirements
-Operating System: Windows 10 or Windows 11, 64-bit
-Recommended RAM: 8 GB or more
-Recommended Display: 1366×768 or higher
-Storage: Keep at least 500 MB of free space for KyuPlay, application data, backups, and exports
-Microsoft Edge WebView2 Runtime: Required
-Internet connection recommended for downloading, updates, and any online services used by KyuPlay
+- **Windows**
+- **macOS on Apple Silicon / M-series Macs only**
 
-KyuPlay uses Microsoft Edge WebView2 to render its desktop interface. WebView2 is normally already installed on modern Windows 10 and Windows 11 systems. Tauri's Windows installer can also install WebView2 when it is missing, depending on how the installer is packaged.
+---
 
-Installing on Windows
-Download the official KyuPlay Windows installer.
-Open the installer.
-Allow Windows to complete the installation.
-If WebView2 is required, allow its installation to finish.
-Launch KyuPlay from the Start menu or desktop shortcut.
-You do NOT need to install
+# Windows
 
-Normal KyuPlay users do not need:
+## System Requirements
 
-Node.js
-npm
-Rust
-Cargo
-Tauri CLI
-Visual Studio
-Microsoft C++ Build Tools
+- **Operating System:** Windows 10 or Windows 11, 64-bit
+- **Recommended RAM:** 8 GB or more
+- **Recommended Display:** 1366×768 or higher
+- **Recommended Free Storage:** At least 500 MB
+- **Required Runtime:** Microsoft Edge WebView2 Runtime
+- **Internet Connection:** Recommended for downloads, updates, licensing, and online services used by KyuPlay
 
-Those tools are only needed by developers who build KyuPlay from source. Microsoft C++ Build Tools, for example, are a Tauri development requirement, not something ordinary users need after KyuPlay has been packaged.
+KyuPlay uses **Microsoft Edge WebView2** to display its desktop interface. On most modern Windows 10 and Windows 11 computers, WebView2 is already installed.
 
-macOS
-Important — Apple Silicon Only
+## Windows Installation
 
-KyuPlay for macOS only supports Apple Silicon / M-series Macs.
+1. Download the official **KyuPlay Windows installer**.
+2. Open the installer.
+3. Follow the installation instructions.
+4. If WebView2 is required, allow it to install.
+5. Launch **KyuPlay** from the Start menu or desktop shortcut.
 
-Supported processor family:
+## You Do Not Need to Install
 
-Apple M1 or newer Apple Silicon
+Normal KyuPlay users do **not** need:
 
-Intel-based Macs are not supported by the KyuPlay macOS release.
+- Node.js
+- npm
+- Rust
+- Cargo
+- Tauri CLI
+- Visual Studio
+- Microsoft C++ Build Tools
 
-You can check your Mac by opening:
+These are only needed by developers who build KyuPlay from source.
 
-Apple menu → About This Mac
+---
 
-Under Chip, it should show an Apple M-series processor.
+# macOS
 
-System Requirements
-Processor: Apple Silicon / M-series only
-Operating System: macOS 12 Monterey or newer recommended for KyuPlay
-Recommended RAM: 8 GB or more
-Recommended Display: 1280×800 or higher
-Storage: Keep at least 500 MB of free space for KyuPlay, venue data, backups, and exports
-Internet connection recommended for downloading, updates, and any online services used by KyuPlay
+## Important — Apple Silicon Only
 
-Tauri supports Apple Silicon-specific builds, and its documentation provides macOS 12.0 as the minimum system version configuration for Apple Silicon-only distribution.
+**KyuPlay for macOS only supports Apple Silicon / M-series Macs.**
 
-Installing on macOS
-Download the official KyuPlay for macOS package.
-Open the downloaded .dmg or installer package.
-Move KyuPlay to Applications if instructed.
-Open Applications → KyuPlay.
-Complete any macOS security confirmation shown during the first launch.
+Supported examples include:
 
-Official macOS applications distributed outside the App Store are normally code-signed and notarized for distribution.
+- Apple M1
+- Apple M2
+- Apple M3
+- Apple M4
+- Newer Apple Silicon Macs
 
-You do NOT need to install
+**Intel-based Macs are not supported.**
 
-Normal Mac users do not need:
+To check your Mac:
 
-Xcode
-Xcode Command Line Tools
-Node.js
-npm
-Rust
-Cargo
-Tauri CLI
+**Apple menu → About This Mac → Chip**
 
-Those are development tools used to build KyuPlay, not runtime requirements for the finished app.
+Your Mac should show an **Apple M-series processor**.
 
-Recommended Setup
+## macOS System Requirements
+
+- **Processor:** Apple Silicon / M-series only
+- **Operating System:** macOS 12 Monterey or newer recommended
+- **Recommended RAM:** 8 GB or more
+- **Recommended Display:** 1280×800 or higher
+- **Recommended Free Storage:** At least 500 MB
+- **Internet Connection:** Recommended for downloads, updates, licensing, and online services used by KyuPlay
+
+## macOS Installation
+
+1. Download the official **KyuPlay macOS package**.
+2. Open the downloaded `.dmg` or installer.
+3. Move KyuPlay to **Applications** if instructed.
+4. Open **Applications → KyuPlay**.
+5. Complete any macOS security confirmation shown during first launch.
+
+## You Do Not Need to Install
+
+Normal Mac users do **not** need:
+
+- Xcode
+- Xcode Command Line Tools
+- Node.js
+- npm
+- Rust
+- Cargo
+- Tauri CLI
+
+These are development tools only.
+
+---
+
+# Recommended Setup
 
 For the smoothest KyuPlay experience:
 
-Keep Windows or macOS updated.
-Use 8 GB RAM or more where possible.
-Keep sufficient free disk space for venue records, backups, and Excel exports.
-On Windows, keep Microsoft Edge WebView2 updated.
-Avoid manually modifying KyuPlay's application-data files.
-Create regular KyuPlay backups, especially before replacing or transferring venue data.
-Keep important .kyuplay backups in a separate safe location.
-Use the built-in Excel statistics export when you need reporting data outside KyuPlay.
+- Keep **Windows or macOS updated**.
+- Use **8 GB RAM or more** when possible.
+- Keep enough free storage for venue records, backups, and Excel exports.
+- On Windows, keep **Microsoft Edge WebView2** updated.
+- Avoid manually editing KyuPlay application-data files.
+- Create regular KyuPlay backups.
+- Keep important `.kyuplay` backup files in a separate safe location.
+- Use KyuPlay's built-in Excel statistics export for reporting.
+- For venue use, a **1920×1080 display** is recommended, especially when managing multiple courts or using **Live View**.
 
-For venue use, a larger display such as 1920×1080 is recommended, especially when managing several courts or using KyuPlay's Live View.
+---
 
-Platform Compatibility
-	Windows	macOS
-KyuPlay supported	✅	✅
-Architecture	64-bit Windows	Apple Silicon only
-Intel Mac	—	❌ Not supported
-M-series Mac	—	✅ Supported
-WebView runtime	Microsoft Edge WebView2	Built into macOS
-Node.js required	❌	❌
-Rust required	❌	❌
-Tauri required separately	❌	❌
-Development tools required	❌	❌
-Need Help?
+# Platform Compatibility
 
-If KyuPlay does not start:
+## Windows
 
-Windows: make sure Microsoft Edge WebView2 Runtime is installed and Windows is up to date.
+- **Supported:** Yes
+- **Architecture:** 64-bit Windows
+- **Web Runtime:** Microsoft Edge WebView2
+- **Node.js Required:** No
+- **Rust Required:** No
+- **Tauri Required Separately:** No
+- **Development Tools Required:** No
 
-Mac: confirm that the computer uses an Apple M-series chip and is running a supported version of macOS.
+## macOS
 
-For other installation, licensing, or KyuPlay issues, contact KyuPlay support with your operating-system version and a short description of what happened.
+- **Supported:** Yes
+- **Architecture:** Apple Silicon / M-series only
+- **Intel Mac Support:** No
+- **M-series Mac Support:** Yes
+- **Web Runtime:** Built into macOS
+- **Node.js Required:** No
+- **Rust Required:** No
+- **Tauri Required Separately:** No
+- **Development Tools Required:** No
+
+---
+
+# Troubleshooting
+
+## If KyuPlay Does Not Start on Windows
+
+- Make sure Windows is up to date.
+- Make sure **Microsoft Edge WebView2 Runtime** is installed.
+- Restart the computer and try opening KyuPlay again.
+
+## If KyuPlay Does Not Start on macOS
+
+- Confirm that the Mac uses an **Apple M-series processor**.
+- Confirm that macOS is up to date.
+- Check any macOS security prompts shown during first launch.
+
+---
+
+# Need Help?
+
+For installation, licensing, or KyuPlay-related issues, contact **KyuPlay Support** and include:
+
+- your operating system,
+- your Windows or macOS version,
+- your device model if relevant,
+- and a short description of the issue.
