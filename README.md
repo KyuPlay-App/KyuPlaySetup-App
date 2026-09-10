@@ -1,4 +1,4 @@
-KyuPlay — Setup & System Requirements
+# KyuPlay — Setup & System Requirements
 
 KyuPlay is a desktop venue-management application built for managing courts, players, Open Play sessions, matchmaking, tournaments, schedules, statistics, Live View, and venue records from one place.
 
